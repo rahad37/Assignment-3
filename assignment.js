@@ -5,23 +5,26 @@ function kilometerToMeter(kilometer){
     var distance = kilometer * 1000;
     return distance;
 }
-
+// var result = kilometerToMeter();
+// console.log(result);
 
 // ========== Problem-2 ============
 
 function budgetCalculator(clock, mobile, laptop){
-    var firstItem = clock * 5;
-    var secondItem = mobile * 6;
-    var thirdItem = laptop * 7;
+    var firstItem = clock * 50;
+    var secondItem = mobile * 100;
+    var thirdItem = laptop * 500;
 
     var totalPrice = firstItem + secondItem + thirdItem;
     return totalPrice;
 }
+// var result = budgetCalculator();
+// console.log(result);
 
 
 // =========== Problem-3 ============
 
-function hotalCost(days){
+function hotelCost(days){
    
     var totalTaka = 0;
 
@@ -39,21 +42,25 @@ function hotalCost(days){
         var firstTenDays = 10 * 100;
         var secondTenDays = 10 * 80;
         var remainingDays = days - 20;
-        var thirdRestDays = remainingDays * 50;
-        totalTaka = firstTenDays + secondTenDays + thirdRestDays;
+        var RestOfDays = remainingDays * 50;
+        totalTaka = firstTenDays + secondTenDays + RestOfDays;
     }
     return totalTaka;
 }
+// var result = hotelCost();
+// console.log(result);
 
 // ============ Problem-4 ============
 
 function megaFriend(names){
-    var largeName = names[0];
+    var longestName = names[0];
     for(var i=0; i< names.length; i++){
         var items = names[i];
-        if(items.length>largeName.length){
-            largeName = items;
+        if(items.length>longestName.length){
+            longestName = items;
         }
     }
-    return largeName;
+    return longestName;
 }
+// var result = megaFriend([]);
+// console.log(result);
