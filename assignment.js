@@ -42,8 +42,8 @@ function hotelCost(days){
         var firstTenDays = 10 * 100;
         var secondTenDays = 10 * 80;
         var remainingDays = days - 20;
-        var RestOfDays = remainingDays * 50;
-        totalTaka = firstTenDays + secondTenDays + RestOfDays;
+        var restOfDays = remainingDays * 50;
+        totalTaka = firstTenDays + secondTenDays + restOfDays;
     }
     return totalTaka;
 }
